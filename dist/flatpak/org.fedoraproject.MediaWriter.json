@@ -20,7 +20,7 @@
             "sources": [
                 {
                     "type": "git",
-                    "url": "http://github.com/MartinBriza/MediaWriter",
+                    "url": "https://github.com/MartinBriza/MediaWriter",
                     "branch": "master"
                 },
                 {
