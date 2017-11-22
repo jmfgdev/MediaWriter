@@ -130,7 +130,7 @@ echo "=== Inserting helper"
 #upx $(find . -name "*.exe")
 #upx $(find . -name "*.dll")
 
-# See http://stackoverflow.com/questions/18287960/signing-windows-application-on-linux-based-distros for details
+# See https://stackoverflow.com/questions/18287960/signing-windows-application-on-linux-based-distros for details
 echo "=== Signing binaries"
 
 osslsigncode sign -pkcs12 $CERTPATH/authenticode.pfx -readpass "$CERTPASS" -h sha256 -n "Fedora Media Writer" -i https://getfedora.org -t http://timestamp.verisign.com/scripts/timstamp.dll -in "$MEDIAWRITER" -out "$MEDIAWRITER.signed" >/dev/null
